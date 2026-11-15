@@ -1,0 +1,8 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-c": ["task::Spawn", { "task_name": "Conventional Commit (Rust)" }]
+    }
+  }
+]

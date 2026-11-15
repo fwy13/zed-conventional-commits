@@ -1,0 +1,18 @@
+# Copy to your repo root as .zed-conventional-commits.toml
+# Defaults emulate the original VS Code extension where possible.
+auto_commit = true
+auto_push = false  # enabled only if you explicitly want pushing
+stage_all = false # safer default: only commit what you staged in Zed
+
+gitmoji = true
+emoji_format = "code"  # "code" (:sparkles:) or "emoji" (✨)
+line_break = "\\n"   # enter \n in body/footer to insert a newline
+prompt_scopes = true
+prompt_body = true
+prompt_footer = true
+prompt_ci = false
+prompt_tag = false
+
+scopes = ["api", "web", "docs", "ci"]
+tags = ["[release]", "[hotfix]"]
+types = ["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert"]

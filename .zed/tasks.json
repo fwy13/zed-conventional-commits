@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Build Rust CLI (release)",
+    "command": "cargo",
+    "args": ["build", "--release"],
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Run Rust unit + integration tests",
+    "command": "cargo",
+    "args": ["test", "--all-targets"],
+    "reveal": "always",
+    "hide": "never"
+  },
+  {
+    "label": "Conventional Commit (Rust)",
+    "command": "zed-cc",
+    "args": ["commit", "--repo", "$ZED_WORKTREE_ROOT"],
+    "reveal": "always",
+    "hide": "never",
+    "save": "all"
+  },
+  {
+    "label": "Conventional Commit: Preview (Rust)",
+    "command": "zed-cc",
+    "args": ["commit", "--repo", "$ZED_WORKTREE_ROOT", "--dry-run"],
+    "reveal": "always",
+    "hide": "never",
+    "save": "all"
+  }
+]

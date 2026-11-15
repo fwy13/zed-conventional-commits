@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Conventional Commit (Rust)",
+    "command": "zed-cc",
+    "args": ["commit", "--repo", "$ZED_WORKTREE_ROOT"],
+    "reveal": "always",
+    "hide": "never",
+    "save": "all"
+  },
+  {
+    "label": "Conventional Commit: Preview (Rust)",
+    "command": "zed-cc",
+    "args": ["commit", "--repo", "$ZED_WORKTREE_ROOT", "--dry-run"],
+    "reveal": "always",
+    "hide": "never",
+    "save": "all"
+  }
+]

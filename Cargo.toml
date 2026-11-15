@@ -1,0 +1,23 @@
+[package]
+name = "zed-conventional-commits"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Conventional Commits for Zed via a native Rust CLI and Zed Tasks"
+readme = "README.md"
+
+[[bin]]
+name = "zed-cc"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+dialoguer = "0.11"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+toml = "0.8"
+
+[dev-dependencies]
+tempfile = "3"
